@@ -1,0 +1,44 @@
+#jeu {
+    width: 400px;
+    height: 400px;
+    background: url(ciel.png);
+    position: relative;
+    animation: back 2s infinite linear;
+    -webkit-animation: back 2s infinite linear;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#plane {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#rocket {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    z-index: 2;
+}
+
+#nb {   
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+@keyframes back {
+    to{
+        background-position: -400px 0;
+    }
+}
+
+@-webkit-keyframes back {
+    to{
+        background-position: -400px 0;
+    }
+}
